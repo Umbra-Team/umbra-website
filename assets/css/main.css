@@ -4,6 +4,7 @@ html,
 body,
 div,
 span,
+section,
 applet,
 object,
 iframe,
@@ -3076,6 +3077,9 @@ header h6 + p {
   -ms-flex-direction: row;
   flex-direction: row;
   min-height: 22.5em;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 body.is-ie .spotlights > section {
@@ -3089,6 +3093,8 @@ body.is-ie .spotlights > section {
   display: block;
   position: relative;
   width: 25em;
+  align-items: center;
+  justify-content: center;
 }
 
 .spotlights > section > .image img {
@@ -3114,20 +3120,13 @@ body.is-ie .spotlights > section {
 
 .spotlights > section > .content {
   padding: 4em 5em 2em 5em;
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: -ms-flex;
   display: flex;
-  -moz-flex-direction: column;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -moz-justify-content: center;
-  -webkit-justify-content: center;
-  -ms-justify-content: center;
   justify-content: center;
+  align-items: center;
+  text-align: center;
   width: 50em;
-  -ms-flex: 1;
+  flex: 1;
 }
 
 .spotlights > section > .content > .inner {
@@ -3950,4 +3949,58 @@ body.is-preload #sidebar nav ul li {
   #intro {
     background-attachment: scroll;
   }
+}
+
+/* Wrapper */
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* At least the height of the viewport */
+}
+
+/* Presentation Section */
+#presentation {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* Allow this section to grow and fill available space */
+}
+
+/* Inner Container */
+#presentation .inner {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align content to the top */
+  height: 100%; /* Full height of its parent */
+  padding: 0; /* Remove padding from the inner container */
+  align-items: center; /* Center vertically */
+}
+
+/* Video Wrapper */
+#presentation .video-wrapper {
+  flex: 1; /* Grow to take remaining space */
+  width: 80%; /* Full width of its parent */
+  height: 100%; /* Full height of its parent */
+  min-height: 500px; /* Minimum height */
+}
+
+/* Video Iframe */
+#presentation .video-wrapper iframe {
+  height: 100%; /* Full height of video wrapper */
+  width: 100%; /* Full width of video wrapper */
+  min-height: 600px; /* Minimum height */
+}
+
+/* Presentation Header */
+#presentation h2 {
+  margin: 0; /* Remove margin from the header */
+}
+
+/* General Section Styles */
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
