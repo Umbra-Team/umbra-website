@@ -4027,10 +4027,14 @@ body.is-preload #sidebar nav ul li {
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Align content to the top */
   height: 100%; /* Full height of its parent */
   padding: 5%; /* Remove padding from the inner container */
-  align-items: center; /* Center vertically */
+}
+
+#case-study .inner img {
+  display: block;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 /* General Section Styles */
