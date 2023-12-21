@@ -1,4 +1,4 @@
-baseURL = ""
+baseURL = "https://umbra-collab.net"
 languageCode = 'en-us'
 title = 'Umbra'
 publishDir = "docs"
