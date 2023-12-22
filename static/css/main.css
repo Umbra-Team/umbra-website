@@ -264,17 +264,13 @@ i {
   font-style: italic;
 }
 
-p {
-  margin: 0 0 2em 0;
-}
-
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  color: #ffffff;
+  color: white;
   font-weight: bold;
   line-height: 1.5;
   margin: 0 0 0.5em 0;
@@ -4024,17 +4020,24 @@ body.is-preload #sidebar nav ul li {
 
 /* Inner Container */
 #case-study .inner {
+  color: black;
   flex: 1;
   display: flex;
   flex-direction: column;
   height: 100%; /* Full height of its parent */
   padding: 5%; /* Remove padding from the inner container */
+  text-align: left;
 }
 
 #case-study .inner img {
   display: block;
-  margin-left: auto !important;
-  margin-right: auto !important;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#case-study .inner * {
+  color: black;
 }
 
 /* General Section Styles */

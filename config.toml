@@ -2,3 +2,5 @@ baseURL = "https://umbra-collab.net"
 languageCode = 'en-us'
 title = 'Umbra'
 publishDir = "docs"
+[markup.goldmark.renderer]
+unsafe = true
