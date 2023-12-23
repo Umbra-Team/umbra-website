@@ -492,7 +492,7 @@ Our goal in creating Umbra was to allow users not only to code collaboratively, 
 
 There are two broad options we considered when deciding where to evaluate the code submitted by users: in their own browser (client-side), or sent off somewhere else to be evaluated (server-side).
 
-Either way, we knew we would need to \_sandbox \_the code execution environment. Sandboxing isolates external or untrusted code inside a restricted virtual environment, controlling its access to system resources. This prevents the code from accessing or even being aware of the underlying host system.
+Either way, we knew we would need to \_sandbox_the code execution environment. Sandboxing isolates external or untrusted code inside a restricted virtual environment, controlling its access to system resources. This prevents the code from accessing or even being aware of the underlying host system.
 
 For instance, consider a JavaScript sandbox in a web browser
 
@@ -562,7 +562,7 @@ Destructive code can originate from malicious actors, or from well-intentioned b
 
 - **Depleting host system resources**: Either on purpose or by accident, user code could deplete resources such as CPU cycles, RAM, hard drive space, and network bandwidth on the host machine. Examples include user-submitted attempts to mine cryptocurrency, or even just an accidental infinite loop.
 - **Allocating large amounts of memory** (e.g. loading large asset files, or intentionally causing buffer overflows) can cause a host machine to slow down or crash.
-- _Data breaches_: Without proper safeguards in place, it's possible for an attacker to abuse elevated privileges on the underlying host to gain access to files and data that were not intended to be shared.
+- **Data breaches**: Without proper safeguards in place, it's possible for an attacker to abuse elevated privileges on the underlying host to gain access to files and data that were not intended to be shared.
 - **Network integrity**: Once a user gains access to a system via code, they are free to make requests to other nodes on that network. The malicious actor, appearing to be acting “from within”, could bypass any network security policies put in place to limit information access to the confines of that network.
 
 In summary, allowing untrusted code to be executed on a machine means giving a stranger access to that machine. Proper safeguards need to be put in place to eliminate or minimize the ways in which the system could be compromised.

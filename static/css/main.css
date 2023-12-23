@@ -182,7 +182,7 @@ html {
 }
 
 body {
-  background: #312450;
+  background: #2b2a2a;
 }
 
 body.is-preload *,
@@ -3199,74 +3199,6 @@ body.is-preload .spotlights > section > .content > .inner {
   }
 }
 
-/* Table */
-
-.table-wrapper {
-  -webkit-overflow-scrolling: touch;
-  overflow-x: auto;
-}
-
-table {
-  margin: 0 0 2em 0;
-  width: 100%;
-}
-
-table tbody tr {
-  border: solid 1px rgba(255, 255, 255, 0.15);
-  border-left: 0;
-  border-right: 0;
-}
-
-table tbody tr:nth-child(2n + 1) {
-  background-color: rgba(255, 255, 255, 0.05);
-}
-
-table td {
-  padding: 0.75em 0.75em;
-}
-
-table th {
-  color: #ffffff;
-  font-size: 1em;
-  font-weight: bold;
-  padding: 0 0.75em 0.75em 0.75em;
-  text-align: left;
-}
-
-table thead {
-  border-bottom: solid 2px rgba(255, 255, 255, 0.15);
-}
-
-table tfoot {
-  border-top: solid 2px rgba(255, 255, 255, 0.15);
-}
-
-table.alt {
-  border-collapse: separate;
-}
-
-table.alt tbody tr td {
-  border: solid 1px rgba(255, 255, 255, 0.15);
-  border-left-width: 0;
-  border-top-width: 0;
-}
-
-table.alt tbody tr td:first-child {
-  border-left-width: 1px;
-}
-
-table.alt tbody tr:first-child td {
-  border-top-width: 1px;
-}
-
-table.alt thead {
-  border-bottom: 0;
-}
-
-table.alt tfoot {
-  border-top: 0;
-}
-
 /* Wrapper */
 
 .wrapper {
@@ -3583,6 +3515,7 @@ body.is-preload .wrapper.fade > .inner {
   top: 0;
   width: 18em;
   z-index: 10000;
+  /* border-right: 1px solid whitesmoke; */
 }
 
 #sidebar > .inner {
@@ -3810,14 +3743,15 @@ body.is-ie #sidebar > .inner {
 }
 
 #sidebar nav a:before {
-  background: #3c2c62;
+  background: white;
 }
 
 #sidebar nav a:after {
-  background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
-  background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
-  background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
-  background-image: linear-gradient(to right, #5e42a6, #b74e91);
+  background-image: linear-gradient(
+    225deg,
+    rgb(20, 239, 255) 0%,
+    rgb(0, 128, 255) 100%
+  );
   -moz-transition: max-width 0.2s ease;
   -webkit-transition: max-width 0.2s ease;
   -ms-transition: max-width 0.2s ease;
@@ -3917,13 +3851,13 @@ body.is-preload #sidebar nav ul li {
 
 /* Intro */
 
-#intro {
+/* #intro {
   background-attachment: fixed;
   background-image: url("images/intro.svg");
   background-position: top right;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-}
+} */
 
 #intro p {
   font-size: 1.25em;
@@ -3958,7 +3892,7 @@ body.is-preload #sidebar nav ul li {
 #intro {
   display: flex;
   flex-direction: column;
-  flex: 1; /* Allow this section to grow and fill available space */
+  flex: 1;
 }
 
 /* Inner Container */
@@ -4015,7 +3949,7 @@ body.is-preload #sidebar nav ul li {
   display: flex;
   flex-direction: column;
   flex: 1; /* Allow this section to grow and fill available space */
-  background-color: white;
+  background-color: #2b2a2a;
 }
 
 /* Inner Container */
@@ -4037,7 +3971,7 @@ body.is-preload #sidebar nav ul li {
 }
 
 #case-study .inner * {
-  color: black;
+  color: white;
 }
 
 /* General Section Styles */
@@ -4047,4 +3981,100 @@ section {
   justify-content: center;
   flex-direction: column;
   text-align: center;
+}
+
+/* Update text colors for headers */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #e6e6e6; /* Lighter text for headers */
+}
+
+#sidebar,
+#footer {
+  background-color: #2b2a2a; /* Slightly lighter blue for contrast */
+}
+
+#footer > .inner a,
+#sidebar nav a {
+  color: #c2c2c2; /* Gray text color */
+}
+
+#footer > .inner a:hover,
+#sidebar nav a:hover {
+  color: #e6e6e6; /* Lighter text on hover */
+}
+
+a {
+  color: #4e54c8; /* Blue color for links */
+  border-bottom: dotted 1px rgba(255, 255, 255, 0.35); /* Underline effect */
+}
+
+a:hover {
+  color: #8f94fb; /* Lighter blue on hover */
+}
+
+button,
+.button {
+  background-color: #0f3460; /* Dark blue button background */
+  color: #e6e6e6; /* Light text on buttons */
+}
+
+button:hover,
+.button:hover {
+  background-color: #1a1a2e; /* Darker background on hover */
+}
+
+h1.major:after {
+  background-image: linear-gradient(
+    to right,
+    #5e42a6,
+    #b74e91
+  ); /* Gradient for major headers */
+}
+
+input,
+select,
+textarea {
+  background: #252547; /* Dark background for form elements */
+  color: #c2c2c2; /* Gray text color */
+}
+
+#header > nav > ul > li a {
+  color: #4e54c8; /* Blue color for nav links */
+}
+
+#header > nav > ul > li a.active,
+#header > nav > ul > li a:hover {
+  color: #8f94fb; /* Lighter blue for active/hover state */
+}
+
+ul.alt li {
+  border-top: solid 1px rgba(255, 255, 255, 0.15); /* Subtle border for list items */
+}
+
+blockquote {
+  border-left: solid 4px rgba(255, 255, 255, 0.15); /* Subtle border for blockquotes */
+}
+
+code,
+pre {
+  background: rgba(255, 255, 255, 0.05); /* Subtle background for code blocks */
+}
+
+#intro {
+  background-color: #2b2a2a;
+  border-bottom-style: solid;
+  border-bottom-width: 5;
+}
+
+#presentation {
+  background-color: #2b2a2a;
+}
+
+#our-team {
+  background-color: #2b2a2a;
 }
