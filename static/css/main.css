@@ -1767,8 +1767,7 @@ body.is-preload #sidebar nav ul li {
   display: flex;
   flex-direction: column;
   flex: 1; /* Allow this section to grow and fill available space */
-  background-color: black;
-
+  background-color: #2b2a2a;
   position: relative;
   z-index: 10;
 }
@@ -1816,7 +1815,7 @@ h6 {
 
 #sidebar,
 #footer {
-  background-color: #2b2a2a; /* Slightly lighter blue for contrast */
+  background-color: #2b2a2a;
 }
 
 #footer > .inner a,
