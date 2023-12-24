@@ -15,6 +15,10 @@
     <!-- Sidebar -->
     <section id="sidebar">
       <div class="inner">
+        <div class="sidebar-logo">
+          <img src="images/transparent_logo.png" />
+          <h1>Umbra</h1>
+        </div>
         <nav>
           <ul>
             <li><a href="#intro">Introduction</a></li>
@@ -23,6 +27,19 @@
             <li><a href="#our-team">Our Team</a></li>
           </ul>
         </nav>
+        <div class="umbra-links">
+          <div class="umbra-links">
+            <a href="https://www.umbra-collab.com" target="_blank">
+              <img src="images/transparent_logo.png" />
+            </a>
+            <a
+              href="https://github.com/Team1-2308-Capstone/Umbra"
+              target="_blank"
+            >
+              <img src="images/github.png" />
+            </a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -35,6 +52,7 @@
           <img src="images/transparent_logo.png" class="intro-logo" />
           <p>Real Time Collaborative Programming</p>
         </div>
+        <span class="bottom"></span>
       </section>
 
       <!-- Case Study -->
@@ -43,6 +61,7 @@
         <div class="inner">
           {{ readFile "layouts/partials/case_study.md" | markdownify }}
         </div>
+        <span class="bottom"></span>
       </section>
 
       <!-- Presentation -->
@@ -60,6 +79,7 @@
             ></iframe>
           </div>
         </div>
+        <span class="bottom"></span>
       </section>
 
       <!-- Our Team -->
