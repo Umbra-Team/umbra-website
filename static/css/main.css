@@ -105,7 +105,7 @@ section {
 
 @font-face {
   font-family: "Nunito SemiBold";
-  src: url("static/webfonts/Nunito-SemiBold.ttf") format("truetype");
+  src: url("/webfonts/Nunito-SemiBold.ttf") format("truetype");
 }
 
 body {
@@ -1996,4 +1996,36 @@ pre {
   /* Hide scrollbar for IE, Edge and Firefox */
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+}
+
+/* team pictures */
+#team-pictures {
+  display: flex;
+  flex-direction: row;
+  width: "75%";
+  justify-content: space-between;
+}
+
+#team-pictures img {
+  width: 300px;
+  height: 300px;
+}
+
+.personal-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#team-pictures .personal-icons {
+  text-decoration: none;
+  border-bottom: none;
+}
+#team-pictures .personal-icons img {
+  width: 64px;
+  height: 64px;
+}
+
+#team-pictures .personal-icons a {
+  text-decoration: none;
+  border-bottom: none;
 }
