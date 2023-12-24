@@ -125,7 +125,7 @@ Both approaches are the subject of a large amount of research; a complete review
 
 ---
 
-### 2.3.1 Operational transformation
+### 2.3.1 Operational Transformation
 
 Operational transformation relies on a central server that functions as a moderator between all active clients. The server collects all changes to the document, applies them in an order of its choosing, and returns the results to the clients.
 
@@ -864,7 +864,5 @@ Should the code execution server need to be scaled up in the future, we are in a
 [https://github.com/erdtool/yjs-scalable-ws-backend](https://github.com/erdtool/yjs-scalable-ws-backend)
 
 <!-- Footnotes themselves at the bottom. -->
-
-## Notes
 
 [^1]: Robert Miller, "Response time in man-computer conversational transactions" _AFIPS '68_ (Fall, part I): Proceedings of the December 9-11, 1968, fall joint computer conference, part I -- December 1968 Pages 267–277

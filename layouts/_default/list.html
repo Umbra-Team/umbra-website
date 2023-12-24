@@ -22,7 +22,343 @@
         <nav>
           <ul>
             <li><a href="#intro">Introduction</a></li>
-            <li><a href="#case-study">Case Study</a></li>
+            <li>
+              <a href="#case-study">Case Study</a>
+              <ul id="case-study-nav" style="display: none">
+                <li>
+                  <a href="#1-introduction">1 - Introduction</a>
+                  <ul>
+                    <li>
+                      <a href="#11-what-is-umbra">What is Umbra?</a>
+                      <ul>
+                        <li><a href="#111-use-cases">Use Cases</a></li>
+                        <li>
+                          <a href="#112-what-umbra-is-not">What Umbra is Not</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#12-comparing-umbra-with-existing-solutions"
+                        >Existing Solutions</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#2-real-time-collaboration"
+                    >2 - Real Time Collaboration</a
+                  >
+                  <ul>
+                    <li>
+                      <a href="#21-definitions">Definitions</a>
+                    </li>
+                    <li>
+                      <a
+                        href="#22-the-technical-challenges-of-real-time-collaborative-editing"
+                        >Technical Challenges</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#23-conflict-resolution">Conflict Resolution</a>
+                      <ul>
+                        <li>
+                          <a href="#231-operational-transformation"
+                            >Operational Transformation</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#232-conflict-free-replicated-data-type-crdt"
+                            >CRDT</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#233-yjs">Yjs</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#24-awareness-and-latency"
+                        >Awareness and Latency</a
+                      >
+                      <ul>
+                        <li>
+                          <a href="#241-performance-optimizations-for-crdts"
+                            >Performance Optimizations For CRDTs</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#242-crdt-based-awareness"
+                            >CRDT-Based Awareness</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#243-latency">Latency</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#3-decisionsimplementation-for-collaboration"
+                    >3 - Decisions For Collaboration</a
+                  >
+                  <ul>
+                    <li>
+                      <a href="#31-overview">Overview</a>
+                    </li>
+                    <li>
+                      <a href="#32-protocol--architecture"
+                        >Protocol & Architecture</a
+                      >
+                      <ul>
+                        <li>
+                          <a href="#321-webrtc">WebRTC</a>
+                        </li>
+                        <li>
+                          <a href="#322-websocket">Websocket</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#33-connection-providers"
+                        >Connection Providers</a
+                      >
+                      <ul>
+                        <li>
+                          <a href="#331-provider-client">Provider(Client)</a>
+                        </li>
+                        <li>
+                          <a href="#332-backend-provider">Backend Provider</a>
+                        </li>
+                        <li>
+                          <a href="#333-connection-lifecycle"
+                            >Connection Lifecycle</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#334-data-flow">Data Flow</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#34-codemirror-yjs-and-react-in-our-application"
+                        >CodeMirror, Yjs, and React in Our Application</a
+                      >
+                      <ul>
+                        <li>
+                          <a href="#341-codemirrors-state-and-view"
+                            >CodeMirror’s State and View</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#342-interaction-with-yjs"
+                            >Interaction With Yjs</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#343-awareness">Awareness</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#35-our-decision-to-use-y-sweet"
+                        >Our Decision to Use Y-Sweet</a
+                      >
+                      <ul>
+                        <li>
+                          <a
+                            href="#351-challenges-in-building-a-real-time-collaborative-application"
+                            >Challenges in Building a Real-Time Collaborative
+                            Application</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#352-considered-solutions"
+                            >Considered Solutions</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#353-our-decision-y-sweet"
+                            >Our Decision: Y-Sweet</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#36-y-sweet-and-cloudflare"
+                        >Y-Sweet and Cloudflare</a
+                      >
+                      <ul>
+                        <li>
+                          <a href="#361-introduction">Introduction</a>
+                        </li>
+                        <li>
+                          <a href="#362-leveraging-cloudflares-edge-network"
+                            >Leveraging Cloudflare's Edge Network</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#363-how-umbra-clients-workers-and-durable-objects-interact"
+                            >How Umbra Clients, Workers, and Durable Objects
+                            Interact</a
+                          >
+                        </li>
+
+                        <li>
+                          <a href="#365-data-integrity">Data Integrity</a>
+                        </li>
+                        <li>
+                          <a href="#366-tradeoffs-and-scenarios"
+                            >Tradeoffs and Scenarios</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#4-executing-user-submitted-code"
+                    >4 - Executing User Submitted Code</a
+                  >
+                  <ul>
+                    <li>
+                      <a href="#41-client-side-or-server-side-execution"
+                        >Client Side or Server Side Execution?</a
+                      >
+                      <ul>
+                        <li>
+                          <a href="#411-client-side-evaluation"
+                            >Client Side Evaluation</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#412-server-side-evaluation"
+                            >Server Side Evaluation</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#42-safely-executing-untrusted-code"
+                        >Safely Executing Untrusted Code</a
+                      >
+                      <ul>
+                        <li>
+                          <a
+                            href="#421-what-problems-can-arise-from-running-untrusted-code-on-a-server"
+                            >What Problems Can Arise From Running Untrusted Code
+                            On a Server?</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#422-sandboxing-user-submitted-code"
+                            >Sandboxing User Submitted Code</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#5-decisions-for-code-execution"
+                    >5 - Decisions For Code Execution</a
+                  >
+                  <ul>
+                    <li>
+                      <a href="#51-initial-code-execution-approach-deno"
+                        >Initial Code Execution Approach: Deno</a
+                      >
+                      <ul>
+                        <li>
+                          <a
+                            href="#511-sandboxed-child-processes-for-running-code"
+                            >Sandboxed Child Processes For Running Code</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#52-exploring-alternatives"
+                        >Exploring Alternatives</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#53-current-deployment-choice-piston"
+                        >Current Deployment Choice: Piston</a
+                      >
+                      <ul>
+                        <li>
+                          <a href="#531-the-piston-api">The Piston API</a>
+                        </li>
+                        <li>
+                          <a href="#532-an-eye-towards-security"
+                            >An Eye Towards Security</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#533-the-shoulders-of-giants"
+                            >The Shoulders of Giants</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#6-system-design">6 - System Design</a>
+                  <ul>
+                    <li>
+                      <a href="#61-architecture-and-hosting-overview"
+                        >Architecture and Hosting Overview</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#62-umbras-services">Umbra's Services</a>
+                      <ul>
+                        <li>
+                          <a href="#621-web-server">Web Server</a>
+                        </li>
+                        <li>
+                          <a href="#622-collaboration-service"
+                            >Collaboration Service</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#623-code-execution-service"
+                            >Code Execution Service</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#624-user-authentication-service"
+                            >User Authentication Service</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#625-database">Database</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#7-towards-the-future">7 - Towards the Future</a>
+                  <ul>
+                    <li>
+                      <a href="#71-scaling-up">Scaling Up</a>
+                    </li>
+                    <li>
+                      <a href="#72-expansion-of-features"
+                        >Expansion of Features</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#references">References</a>
+                </li>
+              </ul>
+            </li>
             <li><a href="#presentation">Presentation</a></li>
             <li><a href="#our-team">Our Team</a></li>
           </ul>
@@ -107,5 +443,6 @@
     <script src="/js/breakpoints.min.js"></script>
     <script src="/js/util.js"></script>
     <script src="/js/main.js"></script>
+    <script src="/js/scroll-case-study.js"></script>
   </body>
 </html>

@@ -1306,7 +1306,7 @@ body.is-preload .wrapper.fade > .inner {
   overflow-x: hidden;
   overflow-y: auto;
   position: fixed;
-  text-align: right;
+  text-align: left;
   top: 0;
   width: 18em;
   z-index: 10000;
@@ -1794,6 +1794,45 @@ body.is-preload #sidebar nav ul li {
   color: white;
 }
 
+#case-study-nav * {
+  list-style: none !important;
+}
+
+#case-study-nav a {
+  text-decoration: none !important;
+  border-bottom: none !important;
+  margin: 0 !important;
+  padding: 5px !important;
+}
+
+#case-study-nav a:before {
+  background: transparent !important;
+}
+
+#case-study-nav a:after {
+  background-image: linear-gradient(
+    225deg,
+    rgb(20, 239, 255) 0%,
+    rgb(0, 128, 255) 100%
+  );
+}
+
+#case-study-nav ul,
+#case-study-nav li {
+  margin-top: 0 !;
+  padding-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* #case-study-nav a:before {
+  background: transparent;
+}
+
+#sidebar nav a:after {
+  background: transparent;
+} */
+
 /* General Section Styles */
 section {
   display: flex;
@@ -1946,4 +1985,15 @@ pre {
 
 .umbra-links a {
   border-bottom: none !important;
+}
+
+#sidebar {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
