@@ -129,7 +129,7 @@ Both approaches are the subject of a large amount of research; a complete review
 
 Operational transformation relies on a central server that functions as a moderator between all active clients. The server collects all changes to the document, applies them in an order of its choosing, and returns the results to the clients.
 
-![alt_text](images/crdt.gif "image_tooltip")
+![alt_text](images/ot.gif "Operational Transformation")
 
 <p align="center"><em>Visualization credit: <a href="https://operational-transformation.github.io/index.html">https://operational-transformation.github.io/index.html</a></em></p>
 
@@ -142,7 +142,7 @@ Essentially, there are three factors that govern the order in which user changes
 
 An important consideration with OT is that a central server is required to arbitrate changes, and this leads to a potential _single point of failure_. It may also lead to inconsistencies in the event of server downtime or network issues. On the other hand, a decentralized (CRDT-based) approach facilitates horizontal scalability, as the system can distribute the load across multiple replicas without a centralized bottleneck.
 
-![alt_text](images/image17.png "image_tooltip")
+![alt_text](images/ot_server.png "OT Server")
 
 ---
 
@@ -160,7 +160,7 @@ This ensures that change events will be both _commutative_ (successive changes w
 
 With CRDTs, all conflict resolution logic happens algorithmically, without a central arbitrator calling the shots.
 
-![alt_text](images/image30.png "image_tooltip")
+![alt_text](images/crdt_server.png "CRDT Server")
 
 &nbsp;
 
@@ -502,9 +502,10 @@ For instance, consider a JavaScript sandbox in a web browser
 
 A web browser itself is already capable of evaluating more than just HTML and CSS. The ability of the browser to also evaluate JavaScript has been a cornerstone of the modern web, so why not leverage this existing architecture to evaluate user submitted JavaScript?
 
-![alt_text](images/client_side_code_execution.png "image_tooltip")
+\
 
-&nbsp;
+![alt_text](images/client_side_code_execution_dark.png "Client Side Code Execution")
+
 ✅ **No Network Round Trip for Code Evaluation**
 
 The user's web browser is local to the machine they are using, so there would be no network trip to an external server to evaluate the code. This would reduce the latency experienced from the time of code submission to receipt of evaluation.
@@ -528,7 +529,7 @@ Using client-side execution means putting more load on our users’ systems. It 
 
 An alternative to executing code in the user's browser is to evaluate the code on a remote server instead. This could be done on the same server hosting the Umbra web app, a separate server of our own set up specifically for evaluating users’ code, or a third party code evaluation service.
 
-![alt_text](images/server_side_execution_v2.png "image_tooltip")
+![alt_text](images/server_side_execution_dark.png "Server Side Execution")
 
 ✅ **Allows for Collaborating in Multiple Programming Languages**
 
@@ -573,7 +574,7 @@ In summary, allowing untrusted code to be executed on a machine means giving a s
 
 Despite the risks, executing untrusted code is a common occurrence. For example, it is a crucial business consideration for websites such as Coderpad, Leetcode, and CodeWars to protect their servers from potentially destructive user code. There are ways to minimize the potential for attack, and to ensure that the untrusted code can do zero or minimal damage to the underlying host system.
 
-![alt_text](images/image16.png "image_tooltip")
+![alt_text](images/image16.png "Sandboxed Code")
 
 <p align="center"><em><a href="https://behradtaher.dev/2022/06/11/Sandboxing-Code-Execution/">https://behradtaher.dev/2022/06/11/Sandboxing-Code-Execution/</a></em></p>
 
@@ -586,7 +587,7 @@ One common method that we mentioned earlier is _code sandboxing_. There is more 
 
 A virtual machine (VM) is essentially an entire computer system, with virtualized hardware and an operating system, that runs on top of the infrastructure of a host machine. Any code executed from within a VM is restricted to this environment. Without explicit access granted, it cannot access the underlying host. Any damage done is confined to this virtual machine, and handling the damage is simply a matter of deleting or resetting the VM.
 
-![alt_text](images/image22.png "image_tooltip")
+![alt_text](images/image22.png "Virtual Machines")
 
 <p align="center"><em>Source: www.atlassian.com</em></p>
 
@@ -602,7 +603,7 @@ Because a VM has to emulate both the hardware of a system and its OS, it does in
 
 ”Containerizing” untrusted code is a popular method of sandboxing, with Docker being a popular option. A container is similar to a virtual machine in that it sets up a virtualized environment for code execution. However, a container does not emulate hardware or an OS like a virtual machine does; instead, it shares the host operating system's kernel.
 
-![alt_text](images/image21.png "image_tooltip")
+![alt_text](images/image21.png "Containers")
 
 <p align="center"><em>Source: www.atlassian.com</em></p>
 
@@ -642,7 +643,7 @@ Judge0 is a popular open-source code execution system. It supports over 60 progr
 
 ## 5.3 Current Deployment Choice: Piston
 
-![alt_text](images/piston.png "image_tooltip")
+![alt_text](images/piston.png "Piston")
 
 ---
 
@@ -686,7 +687,7 @@ In this section, we will put all the parts together and take a look at our final
 
 In designing Umbra's architecture, we prioritized separation of concerns and scalability; the major functional components are served from their own dedicated nodes. The overall result is a service-oriented architecture that is flexible and loosely coupled: we wanted to ensure that as the application evolves, we can make changes to a particular service’s code or hosting infrastructure with minimal consequences for the other services.
 
-![alt_text](images/image3.png "image_tooltip")
+![alt_text](images/image3.png "Umbra's Deployment")
 
 <p align="center"><em>Umbra’s current deployment infrastructure</em></p>
 
@@ -696,7 +697,7 @@ In designing Umbra's architecture, we prioritized separation of concerns and sca
 
 In order to facilitate flexibility and ease of development, all of Umbra's (non-managed) services are containerized using Docker containers, and deployed automatically via GitHub Actions to their various hosting solutions.
 
-![alt_text](images/image13.png "image_tooltip")
+![alt_text](images/image13.png "Deployment Process")
 
 &nbsp;
 
@@ -716,7 +717,7 @@ In the following sections, we will explore Umbra's service architecture in more 
 
 The hub of Umbra's backend services is the web server, which is responsible for routing and responding to HTTP requests to our website. For many requests, the web server will communicate with other services to develop an appropriate response to send back to the client. Here are the communication flows handled by our web server:
 
-![alt_text](images/image8.png "image_tooltip")
+![alt_text](images/image8.png "Umbra Webserver")
 
 ---
 
@@ -724,7 +725,7 @@ The hub of Umbra's backend services is the web server, which is responsible for 
 
 When a client wishes to run some code that they have written, the web server will send the code and its metadata along to the code execution service (our self-hosted Piston environment), which evaluates the code and sends back the results.
 
-![alt_text](images/image7.png "image_tooltip")
+![alt_text](images/image7.png "Code Execution Flow")
 
 &nbsp;
 
@@ -745,9 +746,7 @@ Another example of the web server's role as our backend hub is the case of user 
 The web server also brokers the initial connection between users and our collaboration service. In order to keep track of multiple WebSocket connections and clients, Y-Sweet issues unique client authorization tokens, similar to the way cookies are sometimes used in web applications.
 The web server is one of our services that is containerized using Docker and deployed to AWS Lightsail via Github Actions.
 
-![alt_text](images/y-sweet.png "image_tooltip")
-
----
+## ![alt_text](images/y-sweet.png "Y-Sweet Flowchart")
 
 ### 6.2.2 Collaboration Service
 
