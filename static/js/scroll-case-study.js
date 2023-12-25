@@ -12,6 +12,7 @@ $("#case-study-icon").click(function (e) {
         },
         500
       );
+      $(this).attr("src", "/images/open-arrows.png");
     } else {
       // If it's not visible, animate it to show it
       $("#case-study-nav").animate(
@@ -21,11 +22,13 @@ $("#case-study-icon").click(function (e) {
         },
         500
       );
+      $(this).attr("src", "/images/up_down.png");
     }
   }
 });
 
-$('a[href="#case-study"]').click(function () {
-  e.preventDetault();
-  $(this).addClass("active");
+$("#case-study-nav-link").click(function (e) {
+  e.stopPropagation();
+  e.preventDefault();
+  $(this).addClass("scrolly active");
 });
