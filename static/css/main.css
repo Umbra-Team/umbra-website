@@ -2049,3 +2049,8 @@ pre {
   text-decoration: none;
   border-bottom: none;
 }
+
+#case-study-icon {
+  display: inline;
+  vertical-align: middle;
+}
