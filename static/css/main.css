@@ -845,6 +845,27 @@ ul.actions.fit li > * {
 ul.actions.fit.stacked {
   width: 100%;
 }
+/* generate proper media queries for mobile for #case-study, #intro, #presentation, #our-team */
+@media screen and (max-width: 480px) {
+  #case-study,
+  #intro,
+  #presentation,
+  #our-team {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  #case-study img,
+  #intro img,
+  #presentation img,
+  #our-team img {
+    max-width: 100%;
+    height: auto;
+  }
+}
 
 @media screen and (max-width: 480px) {
   ul.actions:not(.fixed) {
@@ -1685,6 +1706,17 @@ body.is-preload #sidebar nav ul li {
 
 @media screen and (max-width: 736px) {
   #intro p {
+    font-size: 1em;
+  }
+  #case-study p {
+    font-size: 1em;
+  }
+
+  #our-team p {
+    font-size: 1em;
+  }
+
+  #presentation p {
     font-size: 1em;
   }
 }
