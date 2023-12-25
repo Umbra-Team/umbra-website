@@ -1772,6 +1772,12 @@ body.is-preload #sidebar nav ul li {
   z-index: 10;
 }
 
+#case-study-title {
+  margin-top: 50px;
+  font-size: 5rem;
+  color: #0096ff;
+}
+
 /* Inner Container */
 #case-study .inner {
   color: black;
@@ -1926,10 +1932,24 @@ pre {
 
 #presentation {
   background-color: #2b2a2a;
+  padding-bottom: 100px;
+}
+
+#presentation-title {
+  margin-top: 50px;
+  font-size: 5rem;
+  color: #0096ff;
 }
 
 #our-team {
   background-color: #2b2a2a;
+}
+
+#our-team-title {
+  margin-top: 25px;
+  margin-bottom: 50px;
+  font-size: 5rem;
+  color: #0096ff;
 }
 
 /* Glowing bottom borders */
