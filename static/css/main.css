@@ -848,6 +848,14 @@ ul.actions.fit.stacked {
 /* generate proper media queries for mobile for #case-study, #intro, #presentation, #our-team */
 @media screen and (max-width: 480px) {
   #case-study,
+  #case-study img,
+  #intro img,
+  #presentation img,
+  #our-team img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
   #intro,
   #presentation,
   #our-team {
