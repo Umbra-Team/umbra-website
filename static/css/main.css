@@ -845,7 +845,7 @@ ul.actions.fit li > * {
 ul.actions.fit.stacked {
   width: 100%;
 }
-/* generate proper media queries for mobile for #case-study, #intro, #presentation, #our-team */
+
 @media screen and (max-width: 480px) {
   #case-study,
   #case-study img,
@@ -1755,11 +1755,32 @@ body.is-preload #sidebar nav ul li {
 #intro .inner {
   flex: 1;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center; /* Align content to the top */
   height: 100%; /* Full height of its parent */
   padding: 0; /* Remove padding from the inner container */
   align-items: center; /* Center vertically */
+}
+
+.umbra-intro-text p {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.umbra-intro-text a {
+  color: #00bfe0;
+}
+
+.umbra-intro-text a:hover {
+  color: #0096ff;
+}
+.umbra-intro-text h1 {
+  font-size: 5rem;
+  color: #0096ff;
+}
+
+#try-it-out {
+  margin-top: 75px;
 }
 
 /* Presentation Section */
