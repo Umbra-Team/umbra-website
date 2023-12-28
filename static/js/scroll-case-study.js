@@ -28,7 +28,9 @@ $("#case-study-icon").click(function (e) {
 });
 
 $("#case-study-nav-link").click(function (e) {
-  e.stopPropagation();
   e.preventDefault();
-  $(this).addClass("scrolly active");
+  e.stopPropagation();
+  location.hash = $(this).attr("href");
+  $(this).addClass("scrolly active active-locked");
+  console.log(this);
 });
