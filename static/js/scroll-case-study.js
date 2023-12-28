@@ -30,7 +30,10 @@ $("#case-study-icon").click(function (e) {
 $("#case-study-nav-link").click(function (e) {
   e.preventDefault();
   e.stopPropagation();
-  location.hash = $(this).attr("href");
   $(this).addClass("scrolly active active-locked");
+
+  setTimeout(function () {
+    location.hash = $(this).attr("href");
+  }, 10);
   console.log(this);
 });
