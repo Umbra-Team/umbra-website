@@ -31,9 +31,9 @@ $("#case-study-nav-link").click(function (e) {
   e.preventDefault();
   e.stopPropagation();
   $(this).addClass("scrolly active active-locked");
-
+  const href = $(this).attr("href");
+  console.log(href);
   setTimeout(function () {
-    location.hash = $(this).attr("href");
+    location.hash = href;
   }, 10);
-  console.log(this);
 });

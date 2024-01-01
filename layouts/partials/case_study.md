@@ -16,7 +16,7 @@ At this point, users have access within a single browser window to real-time col
 
 With the optional creation of an Umbra account, users also gain the ability to save pieces of code in a personal library for later use. This provides a degree of convenience without necessitating the weight of a full browser-based IDE.
 
-![alt_text](images/libray-2.gif "image_tooltip")
+![alt_text](images/library-3.gif "Code Library Functionality")
 
 <p align="center"><em>Umbra’s code library functionality</em></p>
 
