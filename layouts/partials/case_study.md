@@ -100,7 +100,7 @@ In a **real-time collaborative editing** application, the goal is to mimic the e
 - **Awareness**: Each user should know which other users are "present", what changes they are making, and when and where they are making those changes.
 - **Latency**: Users need to receive automatic updates about the state of the shared document. Those updates should be received within a small enough window of time (about 200 milliseconds or less[^1]) that they can continue their work seamlessly and trust that what they're seeing is the most current document state available.
 
-![alt_text](images/awareness-demo.gif "image_tooltip")
+![alt_text](images/awareness-demo.gif "Awareness Demo")
 
 <p align="center"><em>Two users working in the same document at the same time</em></p>
 
@@ -129,9 +129,9 @@ Both approaches are the subject of a large amount of research; a complete review
 
 Operational transformation relies on a central server that functions as a moderator between all active clients. The server collects all changes to the document, applies them in an order of its choosing, and returns the results to the clients.
 
-![alt_text](images/ot.gif "Operational Transformation")
+<!-- ![alt_text](images/ot.gif "Operational Transformation") -->
 
-<p align="center"><em>Visualization credit: <a href="https://operational-transformation.github.io/index.html">https://operational-transformation.github.io/index.html</a></em></p>
+<!-- <p align="center"><em>Visualization credit: <a href="https://operational-transformation.github.io/index.html">https://operational-transformation.github.io/index.html</a></em></p> -->
 
 \
 Essentially, there are three factors that govern the order in which user changes get applied in the OT model:
