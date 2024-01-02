@@ -349,7 +349,7 @@ Cursor positions and selections are also tracked in the `EditorState` and shared
 Building a real-time collaborative application presents several challenges, which extend beyond just managing WebSocket rooms: \
 
 - **Performance:** The application should handle high volumes of real-time updates with minimal latency.
-- **Connection Management: **The server must be able to manage numerous WebSocket connections, ensuring each client is directed to the correct room.
+- **Connection Management:** The server must be able to manage numerous WebSocket connections, ensuring each client is directed to the correct room.
 - **Data Persistence**: Preserve document changes, even during network disruptions or server failure.
 - **Scalability**: Scale to accommodate increased user and document loads, while maintaining low latency for conflict resolution and efficient use of server resources.
 - **Integration with Frontend Technologies**: Seamlessly integrate with the frontend, aligning with React’s architecture and state management.
