@@ -62,7 +62,7 @@ The existing solutions we found tend to fall into one of three categories:
 
 ![alt_text](images/image25.png "image_tooltip")
 
-&nbsp;
+\
 
 The factors in the last category are acceptable for use cases that require a set of IDE-like features. However, given the simplicity and spontaneity of the use case we're targeting, having so many setup considerations almost defeats the purpose. Because of this, there are still many situations in which both students and professionals find themselves copying and pasting code to each other, or screen-sharing, rather than using an online compiler or IDE.
 
@@ -501,8 +501,6 @@ For instance, consider a JavaScript sandbox in a web browser
 ### 4.1.1 Client Side Evaluation
 
 A web browser itself is already capable of evaluating more than just HTML and CSS. The ability of the browser to also evaluate JavaScript has been a cornerstone of the modern web, so why not leverage this existing architecture to evaluate user submitted JavaScript?
-
-
 
 ![alt_text](images/client_side_code_execution_dark.png "Client Side Code Execution")
 
