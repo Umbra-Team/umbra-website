@@ -346,7 +346,7 @@ Cursor positions and selections are also tracked in the `EditorState` and shared
 
 ### 3.5.1 Challenges in Building a Real-Time Collaborative Application
 
-Building a real-time collaborative application presents several challenges, which extend beyond just managing WebSocket rooms: \
+Building a real-time collaborative application presents several challenges, which extend beyond just managing WebSocket rooms:
 
 - **Performance:** The application should handle high volumes of real-time updates with minimal latency.
 - **Connection Management:** The server must be able to manage numerous WebSocket connections, ensuring each client is directed to the correct room.
@@ -492,7 +492,7 @@ Our goal in creating Umbra was to allow users not only to code collaboratively, 
 
 There are two broad options we considered when deciding where to evaluate the code submitted by users: in their own browser (client-side), or sent off somewhere else to be evaluated (server-side).
 
-Either way, we knew we would need to \_sandbox_the code execution environment. Sandboxing isolates external or untrusted code inside a restricted virtual environment, controlling its access to system resources. This prevents the code from accessing or even being aware of the underlying host system.
+Either way, we knew we would need to _sandbox_ the code execution environment. Sandboxing isolates external or untrusted code inside a restricted virtual environment, controlling its access to system resources. This prevents the code from accessing or even being aware of the underlying host system.
 
 For instance, consider a JavaScript sandbox in a web browser
 
@@ -502,7 +502,7 @@ For instance, consider a JavaScript sandbox in a web browser
 
 A web browser itself is already capable of evaluating more than just HTML and CSS. The ability of the browser to also evaluate JavaScript has been a cornerstone of the modern web, so why not leverage this existing architecture to evaluate user submitted JavaScript?
 
-\
+
 
 ![alt_text](images/client_side_code_execution_dark.png "Client Side Code Execution")
 
