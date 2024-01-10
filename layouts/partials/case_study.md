@@ -697,7 +697,7 @@ In order to facilitate flexibility and ease of development, all of Umbra's (non-
 
 ![alt_text](images/image13.png "Deployment Process")
 
-&nbsp;
+\
 
 All of Umbra's non-managed services are currently deployed via AWS Lightsail, a cloud platform that is built on top of AWS Elastic Compute Cloud (EC2). AWS Lightsail streamlines some common tasks (such as deploying a container from Docker Hub) at the cost of decreased configurability.
 
