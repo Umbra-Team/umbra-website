@@ -861,7 +861,7 @@ ul.actions.fit.stacked {
   #our-team {
     display: block;
     width: 100%;
-    margin: 0;
+    margin: 3em 0;
     padding: 0;
     box-sizing: border-box;
   }
@@ -1692,6 +1692,10 @@ body.is-preload #sidebar nav ul li {
   margin-right: 20px;
 }
 
+.sidebar-logo h1 {
+  margin-right: 20px;
+}
+
 /* Intro */
 
 /* #intro {
@@ -1777,6 +1781,11 @@ body.is-preload #sidebar nav ul li {
 .umbra-intro-text h1 {
   font-size: 5rem;
   color: #0096ff;
+}
+
+.umbra-intro-logo {
+  height: 100%;
+  width: 100%;
 }
 
 #try-it-out {
