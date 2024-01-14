@@ -4,7 +4,7 @@
 
 Umbra is a browser-based code editing and evaluation tool for quickly and seamlessly collaborating on code in real time.
 
-Umbra makes it simple for remote collaborators to program together. The Umbra workflow setup consists of three steps:
+Umbra makes it simple for remote collaborators to program together. The workflow setup consists of three steps:
 
 1. Navigate to the Umbra homepage,
 
