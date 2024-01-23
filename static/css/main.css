@@ -2135,3 +2135,8 @@ pre {
   display: inline;
   vertical-align: middle;
 }
+
+img#piston-image {
+  width: 25% !important;
+  height: auto !important;
+}

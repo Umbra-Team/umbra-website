@@ -601,7 +601,7 @@ Because a VM has to emulate both the hardware of a system and its OS, it does in
 
 ”Containerizing” untrusted code is a popular method of sandboxing, with Docker being a popular option. A container is similar to a virtual machine in that it sets up a virtualized environment for code execution. However, a container does not emulate hardware or an OS like a virtual machine does; instead, it shares the host operating system's kernel.
 
-![alt_text](images/image21.png "Containers")
+![alt_text](images/image21.png "Containers {width='50'}")
 
 <p align="center"><em>Source: www.atlassian.com</em></p>
 
@@ -641,7 +641,8 @@ Judge0 is a popular open-source code execution system. It supports over 60 progr
 
 ## 5.3 Current Deployment Choice: Piston
 
-![alt_text](images/piston.png "Piston")
+<!-- ![alt_text](images/piston.png "Piston") -->
+<img src="./images/piston.png" id="piston-image">
 
 ---
 
