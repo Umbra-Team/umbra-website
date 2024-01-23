@@ -1683,7 +1683,7 @@ body.is-preload #sidebar nav ul li {
   flex-direction: row;
   justify-content: left;
   color: white;
-  margin-bottom: 100%;
+  margin-bottom: 40%;
 }
 
 .sidebar-logo img {
@@ -2082,6 +2082,10 @@ pre {
   /* Hide scrollbar for IE, Edge and Firefox */
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+}
+
+.sidebar-nav {
+  margin-bottom: 20%;
 }
 
 /* team pictures */
