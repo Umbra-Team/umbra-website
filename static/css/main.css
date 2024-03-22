@@ -1791,7 +1791,13 @@ body.is-preload #sidebar nav ul li {
   align-items: center; /* Center vertically */
 }
 
-.umbra-intro-text p {
+.umbra-intro-text {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.umbra-intro-text > p {
+  font-weight: 300;
   font-size: 1.5rem;
   color: white;
 }

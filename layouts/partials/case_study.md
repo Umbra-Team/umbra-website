@@ -30,9 +30,7 @@ The ability to program in real time with other people—when multiple cursors an
 
 ![alt_text](images/awareness.png "image_tooltip")
 
-In addition to being used as a code sharing, teaching, and learning tool, Umbra is also useful as
-
-a coding interview platform for smaller-scale companies as an immediate, no-fuss access to a collaborative coding environment.
+In addition to being used as a code sharing, teaching, and learning tool, Umbra is also useful as a coding interview platform for smaller-scale companies as an immediate, no-fuss access to a collaborative coding environment.
 
 We designed Umbra to be as fast and pain-free as possible for users to share, teach, and learn by writing and evaluating snippets of code in pairs or small groups of collaborators, as if they were working together in the same room.
 
