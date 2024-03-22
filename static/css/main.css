@@ -884,6 +884,10 @@ ul.actions.fit.stacked {
     max-width: 100%;
     height: auto;
   }
+
+  .umbra-intro-logo {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -1621,9 +1625,9 @@ body.is-preload #sidebar nav ul li {
 
 @media screen and (max-width: 1280px) {
   #sidebar {
-    height: 3.5em;
+    height: 3em;
     left: 0;
-    line-height: 3.5em;
+    line-height: 3em;
     overflow: hidden;
     padding: 0;
     text-align: center;
@@ -1642,6 +1646,16 @@ body.is-preload #sidebar nav ul li {
     align-items: stretch;
     height: inherit;
     line-height: inherit;
+  }
+
+  #sidebar .sidebar-logo img {
+    height: 40px;
+    width: 40px;
+    margin: 5px 20px;
+  }
+
+  #sidebar .sidebar-logo h1 {
+    display: none;
   }
 
   #sidebar nav {
@@ -1878,7 +1892,7 @@ body.is-preload #sidebar nav ul li {
   margin-right: auto;
   margin-top: 1em;
   margin-bottom: 1em;
-  width: 90%;
+  width: 35rem;
   height: auto;
 }
 
@@ -2088,14 +2102,17 @@ pre {
 .umbra-links {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 3rem;
   background-color: transparent;
+  padding-bottom: 3rem;
 }
 
 .umbra-links img {
   width: 50px;
   height: 50px;
-  margin-left: 40px;
+  margin: 0 auto;
+  
 }
 
 .umbra-links a {
@@ -2114,7 +2131,7 @@ pre {
 }
 
 .sidebar-nav {
-  margin-bottom: 20%;
+  margin-bottom: 10%;
 }
 
 /* team pictures */
@@ -2133,7 +2150,8 @@ pre {
 .personal-icons {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 10%;
   margin-top: 1em;
 }
 #team-pictures .personal-icons {
@@ -2141,8 +2159,8 @@ pre {
   border-bottom: none;
 }
 #team-pictures .personal-icons img {
-  width: 1.75em;
-  height: 1.75em;
+  width: 1.5em;
+  height: 1.5em;
 }
 
 #team-pictures .personal-icons a {
