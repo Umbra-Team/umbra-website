@@ -108,6 +108,11 @@ section {
   src: url("/webfonts/Nunito-VariableFont_wght.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Vollkorn";
+  src: url("/webfonts/Vollkorn-VariableFont_wght.ttf");
+}
+
 body {
   font-family: "Nunito", sans-serif;
 }
@@ -271,7 +276,7 @@ h6 a {
 }
 
 h1 {
-  font-size: 2.75em;
+  font-size: 2.5em;
 }
 
 h1.major {
@@ -455,14 +460,14 @@ button,
   font-size: 0.6em;
   font-weight: bold;
   height: calc(4.75em + 2px);
-  letter-spacing: 0.25em;
+  letter-spacing: 0.15em;
   line-height: 4.75em;
   outline: 0;
   padding: 0 3.75em;
   position: relative;
   text-align: center;
   text-decoration: none;
-  text-transform: uppercase;
+  {{/* text-transform: uppercase; */}}
   white-space: nowrap;
 }
 
@@ -1547,13 +1552,13 @@ body.is-ie #sidebar > .inner {
   display: block;
   font-size: 0.6em;
   font-weight: bold;
-  letter-spacing: 0.25em;
+  letter-spacing: 0.15em;
   line-height: 1.75;
   outline: 0;
   padding: 1.35em 0;
   position: relative;
   text-decoration: none;
-  text-transform: uppercase;
+  {{/* text-transform: uppercase; */}}
 }
 
 #sidebar nav a:before,
@@ -1786,6 +1791,7 @@ body.is-preload #sidebar nav ul li {
 .umbra-intro-logo {
   height: 100%;
   width: 100%;
+  margin-left: 2rem;
 }
 
 #try-it-out {
@@ -1870,6 +1876,7 @@ body.is-preload #sidebar nav ul li {
 
 #case-study p {
   margin: 0.5em 0;
+  font-weight: 200;
 }
 
 #case-study .inner * {

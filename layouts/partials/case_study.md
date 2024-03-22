@@ -208,7 +208,7 @@ In the next section, we’ll take a closer look at the technologies we chose for
 
 ---
 
-# 3. Decisions/Implementation for Collaboration
+# 3. Decisions for Collaboration
 
 ## 3.1 Overview
 
@@ -805,9 +805,17 @@ Should the code execution server need to be scaled up in the future, we are in a
 
 ## 7.2 Expansion of Features
 
-- **Support For More Programming Languages:** We currently support 5 of the most popular languages that appeal to a broad number of users, but support for more languages would expand the breadth of Umbra’s usefulness to more people.
-- **Voice Chat:** Our product doesn’t have any way for users to communicate with each other except for text within the Umbra code editor. The voice communication sector has many offerings already that people are accustomed to using, so we felt this wasn’t an important feature to include in our initial deployment. However, this could eventually be an intuitive feature for Umbra, and we’ve briefly looked into WebRTC as a mechanism to help us accomplish it.
-- **Embeddability**: Given more time, we would be interested in making Umbra’s coding environment an embeddable component that could be used in websites and within other collaborative applications.
+**Support For More Programming Languages**
+\
+We currently support 5 of the most popular languages that appeal to a broad number of users, but support for more languages would expand the breadth of Umbra’s usefulness to more people.
+
+**Voice Chat** 
+\
+Our product doesn’t have any way for users to communicate with each other except for text within the Umbra code editor. The voice communication sector has many offerings already that people are accustomed to using, so we felt this wasn’t an important feature to include in our initial deployment. However, this could eventually be an intuitive feature for Umbra, and we are experimenting with a WebRTC implementation for it. 
+
+**Embeddability** 
+\
+Given more time, we would be interested in making Umbra’s coding environment an embeddable component that could be used in websites and within other collaborative applications.
 
 ---
 
