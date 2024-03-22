@@ -262,7 +262,7 @@ h6 {
   color: white;
   font-weight: bold;
   line-height: 1.5;
-  margin: 0 0 0.5em 0;
+  margin: 0.5em 0 0.2em 0;
 }
 
 h1 a,
@@ -283,6 +283,12 @@ h1.major {
   margin: 0 0 1.3em 0;
   position: relative;
   padding-bottom: 0.35em;
+}
+
+h1.logo-text {
+  font-family: "Nunito";
+  margin: auto 0;
+  color: rgb(0, 150, 255);
 }
 
 h1.major:after {
@@ -308,7 +314,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.1em;
+  font-size: 1.2em;
 }
 
 h4 {
@@ -1851,7 +1857,7 @@ body.is-preload #sidebar nav ul li {
 
 #case-study-title {
   margin-top: 50px;
-  font-size: 5rem;
+  font-size: 4rem;
   color: #0096ff;
 }
 
@@ -1862,7 +1868,7 @@ body.is-preload #sidebar nav ul li {
   display: flex;
   flex-direction: column;
   height: 100%; /* Full height of its parent */
-  padding: 5%; /* Remove padding from the inner container */
+  /*padding: 5%; /* Remove padding from the inner container */
   text-align: left;
 }
 
@@ -1870,12 +1876,18 @@ body.is-preload #sidebar nav ul li {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
   width: 90%;
   height: auto;
 }
 
 #case-study p {
   margin: 0.5em 0;
+  font-weight: 200;
+}
+
+#case-study li {
   font-weight: 200;
 }
 
@@ -1958,7 +1970,7 @@ h6 {
 
 a {
   color: #4e54c8; /* Blue color for links */
-  border-bottom: dotted 1px rgba(255, 255, 255, 0.35); /* Underline effect */
+  /* border-bottom: dotted 1px rgba(255, 255, 255, 0.35); /* Underline effect */
 }
 
 a:hover {

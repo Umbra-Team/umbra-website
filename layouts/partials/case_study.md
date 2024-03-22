@@ -62,7 +62,7 @@ The existing solutions we found tend to fall into one of three categories:
 
 ![alt_text](images/image25.png "image_tooltip")
 
-\
+<br>
 
 The factors in the last category are acceptable for use cases that require a set of IDE-like features. However, given the simplicity and spontaneity of the use case we're targeting, having so many setup considerations almost defeats the purpose. Because of this, there are still many situations in which both students and professionals find themselves copying and pasting code to each other, or screen-sharing, rather than using an online compiler or IDE.
 
@@ -697,8 +697,7 @@ In designing Umbra's architecture, we prioritized separation of concerns and sca
 In order to facilitate flexibility and ease of development, all of Umbra's (non-managed) services are containerized using Docker containers, and deployed automatically via GitHub Actions to their various hosting solutions.
 
 ![alt_text](images/image13.png "Deployment Process")
-
-\
+<br>
 
 All of Umbra's non-managed services are currently deployed via AWS Lightsail, a cloud platform that is built on top of AWS Elastic Compute Cloud (EC2). AWS Lightsail streamlines some common tasks (such as deploying a container from Docker Hub) at the cost of decreased configurability.
 
@@ -831,8 +830,6 @@ Given more time, we would be interested in making Umbra’s coding environment a
 
 ### Cloudflare
 
-#### R2
-
 [https://developers.cloudflare.com/r2/](https://developers.cloudflare.com/r2/)
 
 ### CRDTs
@@ -840,8 +837,6 @@ Given more time, we would be interested in making Umbra’s coding environment a
 [https://mattweidner.com/2022/02/10/collaborative-data-design.html#list-crdt](https://mattweidner.com/2022/02/10/collaborative-data-design.html#list-crdt)
 
 ### Yjs
-
-#### Overview
 
 [https://www.tag1consulting.com/blog/yjs-deep-dive-part-1](https://www.tag1consulting.com/blog/yjs-deep-dive-part-1)
 
