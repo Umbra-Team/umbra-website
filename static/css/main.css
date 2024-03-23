@@ -107,12 +107,12 @@ section {
   font-family: "Nunito";
   src: url("/webfonts/Nunito-VariableFont_wght.ttf") format("truetype");
 }
-
+/*
 @font-face {
-  font-family: "Vollkorn";
-  src: url("/webfonts/Vollkorn-VariableFont_wght.ttf");
+  font-family: "Ysabeau";
+  src: url("/webfonts/YsabeauOffice-VariableFont_wght.ttf");
 }
-
+*/
 body {
   font-family: "Nunito", sans-serif;
 }
@@ -1558,12 +1558,13 @@ body.is-ie #sidebar > .inner {
   -ms-transition: color 0.2s ease;
   transition: color 0.2s ease;
   border: 0;
-  color: rgba(255, 255, 255, 0.35);
+  /* color: rgba(255, 255, 255, 0.15); */
+  color: #B1B1B1;
   display: block;
-  font-size: 0.6em;
+  font-size: 0.65em;
   font-weight: bold;
-  letter-spacing: 0.15em;
-  line-height: 1.75;
+  letter-spacing: 0.12em;
+  line-height: 2;
   outline: 0;
   padding: 1.35em 0;
   position: relative;
@@ -1600,7 +1601,7 @@ body.is-ie #sidebar > .inner {
 }
 
 #sidebar nav a:hover {
-  color: rgba(255, 255, 255, 0.55);
+  color: rgba(255, 255, 255, 0.85);
 }
 
 #sidebar nav a.active {
@@ -1708,7 +1709,7 @@ body.is-preload #sidebar nav ul li {
   flex-direction: row;
   justify-content: left;
   color: white;
-  margin-bottom: 40%;
+  margin-bottom: 30%;
 }
 
 .sidebar-logo img {
@@ -1904,11 +1905,11 @@ body.is-preload #sidebar nav ul li {
 
 #case-study p {
   margin: 0.5em 0;
-  font-weight: 200;
+  font-weight: 100;
 }
 
 #case-study li {
-  font-weight: 200;
+  font-weight: 100;
 }
 
 #case-study .inner * {
@@ -1985,7 +1986,7 @@ h6 {
 
 #footer > .inner a:hover,
 #sidebar nav a:hover {
-  color: #e6e6e6; /* Lighter text on hover */
+  color: #80F7FF; /* Lighter text on hover */
 }
 
 a {

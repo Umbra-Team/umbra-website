@@ -44,7 +44,7 @@ The primary focus of Umbra is to make pair and group programming quick and conve
 
 ![alt_text](images/image23.png "image_tooltip")
 
-<p align="center"><em>Sharing unrunnable ‘dead code’ snippets or using a full IDE to pair code aren’t always the best ways to collaborate for every situation.</em></p>
+<p align="center"><em>Sharing unrunnable ‘dead code’ snippets or using a full IDE aren’t always the best ways to collaborate</em></p>
 
 ---
 
