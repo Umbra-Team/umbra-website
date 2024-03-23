@@ -1558,8 +1558,7 @@ body.is-ie #sidebar > .inner {
   -ms-transition: color 0.2s ease;
   transition: color 0.2s ease;
   border: 0;
-  /* color: rgba(255, 255, 255, 0.15); */
-  color: #B1B1B1;
+  color: rgba(255, 255, 255, 0.15);
   display: block;
   font-size: 0.65em;
   font-weight: bold;
@@ -1976,7 +1975,7 @@ h6 {
 
 #sidebar,
 #footer {
-  background-color: #2b2a2a;
+  background-color: #1C1A1A; /* Change to #2b2a2a to match body */
 }
 
 #footer > .inner a,
